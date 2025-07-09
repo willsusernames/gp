@@ -1,0 +1,113 @@
+.title-viewport {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.full-bg {
+  background: #fff;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.title-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90vw; /* 85% of viewport width */
+  margin: 0 auto;
+  gap: 0; /* Remove gap so columns fill the space exactly */
+}
+
+.title-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0; /* Each column takes equal width */
+}
+
+.girl-pervert-title {
+  font-family: monospace;
+  color: #ff0000;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+  width: 100%; /* Fill the column */
+  font-size: calc(100vw / 10 / 1.2); /* 85vw divided by 3 columns, adjust 1.2 for spacing */
+  display: block;
+  transition: transform 0.5s;
+}
+
+.girl-pervert-blur {
+  filter: blur(1px) drop-shadow(2px 1 2px #ff0000aa);
+  /* Gaussian blur: blur(4px)
+     Motion blur (simulated): drop-shadow with horizontal offset and color
+     You can stack more drop-shadows for a stronger effect */
+}
+
+.title-link {
+  position: absolute;
+  top: calc(100% + 2in); /* 1 inch below the bottom of the word */
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  color: #222;
+  font-size: 2vw;
+  text-decoration: none;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+.title-link:hover {
+  color: #ff0000;
+}
+
+.page-content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #222;
+  background: #fff;
+}
+
+.mailing-form {
+  background: #efefef;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 0 10px #eee;
+}
+.input-wrapper {
+  margin-bottom: 16px;
+}
+.js-input {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 300px;
+}
+.mailing-submit {
+  background: #ff0000;
+  color: #fff;
+  font-size: 21px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 300px;
+  cursor: pointer;
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+}
